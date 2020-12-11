@@ -1,0 +1,212 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+a{
+	text-decoration: none;
+	color: #555;
+}
+
+.container{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.header{
+	background: radial-gradient(#fff,#e3caaf);
+}
+.header .row{
+	margin-top: 10px;
+}
+.header .billing{
+	background: #fff;
+}
+h1{
+	text-align: center;
+}
+
+
+
+/*-------------------------------------- */
+.row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0 -16px;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 10px 200px 10px;
+}25px 50px 75px 100px; 
+
+.row .col-50 .custom-select {
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.container{
+	border: 5px solid #251300;
+	border-radius: 5px;
+	background: #fbfbfb;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #251300;;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+select{
+width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #251300;
+  border-radius: 3px;
+}
+
+.btn {
+  background-color: #251300;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 50%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+.btn:hover {
+  background-color: orange;
+  color: black;
+}
+
+/*------- responsive layout -------*/
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+/*------- footer -------*/
+.footer{
+	background: #251300;
+	color: white;
+	font-size: 14px;
+	padding: 60px 0 20px;
+}
+.footer p{
+	color: white;
+}
+.footer-col-1, .footer-col-2{
+	min-width: 250px;
+	margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2{
+	flex-basis: 12%;
+	text-align: center;
+}
+ul{
+	list-style-type: none;
+}
+.footer hr{
+	border: none;
+	background: #b5b5b5;
+	height: 1px;
+	margin: 20px 0;
+}
+.copyright{
+	text-align: center;
+}
+.menu-icon{
+	width: 28px;
+	margin-left: 20px;
+	display: none;
+}
+
+/*------- media query for menu -------*/
+@media only screen and (max-width: 800px){
+	nav ul{
+		position: absolute;
+		top: 70px;
+		left: 0;
+		background: #333;
+		width: 100%;
+		overflow: hidden;
+		transition: max-height 0.5s;
+	}
+	nav ul li{
+		display: block;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	nav ul li a{
+		color: #fff;
+	}
+	.menu-icon{
+		display: block;
+		cursor: pointer;
+	}
+}
+
+/*media query for less than 600 screen size*/
+@media only screen and (max-width: 600px){
+	.row{
+		text-align: center;
+	}
+	.col-2, .col-3, .col-4{
+		flex-basis: 100%
+	}
+}
