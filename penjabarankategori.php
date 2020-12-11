@@ -12,7 +12,7 @@ $kat = strtoupper(substr($_GET['k'],0,1)).substr($_GET['k'],1);
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sagu Hati | <?= $kat; ?></title>
+	<title>Sagu Hati | Kategori Produk <?= $kat; ?></title>
 	<link rel="stylesheet" href="penjabarankategori.css">
 </head>
 <body>
