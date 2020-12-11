@@ -16,7 +16,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sagu Hati | Input Product</title>
+  <title>Sagu Hati | Edit Product</title>
   <link rel="stylesheet" href="inputproduk.css">
 </head>
 <body>
@@ -29,7 +29,7 @@
         <nav>
           <ul id="MenuItems">
             <li><a href="home2.php">Home</a></li>
-            <li><a href="inputproduk.php">Input Product</a></li>
+            <li><a href="inputproduk.php">Edit Product</a></li>
             <li><a href="akun.php">Account</a></li>
           </ul>
         </nav>
